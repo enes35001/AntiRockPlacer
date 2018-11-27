@@ -47,14 +47,14 @@ namespace AntiRockPlacer
                 }
                 if (SearchForRock(location))
                 {
-                    actualplacer.MessageFrom(Name + Version, red + "Not allowed to build so close/inside a Rock " + white + " Your " + e.Name + " has been destroyed");
+                    actualplacer.MessageFrom(Name + Version, red + "Taş içine Yapı Yapmak Yasaktır ! Lütfen Bunu Tekrar Denemeyin...");
                     if (!actualplacer.Admin)
                     {
                         e.Destroy();
                     }
                     else
                     {
-                        actualplacer.MessageFrom(Name + Version, green + "Admin Bypass ");
+                        actualplacer.MessageFrom(Name + Version, green + "Admin Kontrolü !");
                     }
                 }
             }
